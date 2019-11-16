@@ -1,0 +1,10 @@
+<div class="margin">
+	<p class="green"><%= flash[:notice] %></p>
+	<h5 class="show-title"><strong>Title:<%= @book.title %></strong></h5>
+	<h5 class="show-title"><strong>Body:<%= @book.body %></strong></h5>
+
+<ul>
+	<li ><%= link_to "Edit", edit_book_path %></li>
+	<li class="border-left"><%= link_to "Back", books_path %></li>
+</ul>
+</div>

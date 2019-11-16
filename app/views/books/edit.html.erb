@@ -1,0 +1,26 @@
+<div class="margin">
+
+<h2>Editing Book</h2>
+<p class="green"><%= flash[:notice] %></p>
+<% if @book.errors.any? %>
+    <ul>
+      <% @book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+<% end %>
+<%= form_for(@book) do |f| %>
+
+	<p><strong>title</strong></p>
+    <%= f.text_field :title %>
+ 
+    <p><strong>Body</strong></p>
+    <%= f.text_area :body %>
+ 
+    <div><%= f.submit 'Update Book' %></div>
+<ul>
+	<li><%= link_to"Show", book_path %></li>
+	<li class="border-left"><%= link_to"Back", books_path %></li>
+</ul>
+<% end %>
+</div>

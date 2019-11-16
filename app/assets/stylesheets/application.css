@@ -1,0 +1,42 @@
+ *{
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.margin{
+	margin:30px;
+}
+
+.index-table{
+	margin-bottom:40px;
+}
+
+.title-size{
+	font-size:2em;
+}
+
+.show-title{
+	margin:30px;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+	display:inline;
+	font-size:15px;
+	color:#666;
+	cursor: pointer;
+    
+}
+
+.border-left{
+	border-left:solid 1px #000000;
+	padding-left:5px;
+}
+
+.green{
+	color:green;
+}
